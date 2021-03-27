@@ -1,0 +1,74 @@
+@media(min-width:28rem)and (max-width:62rem){
+   
+    .fullscereen{
+        position:relative;
+        width:100%;
+        min-width:none;
+        .challange{
+        .bg{
+            display:none;
+        }
+        .content{
+            .pen{
+                max-width:400px;
+                max-height:400px;
+            }
+        }
+        }
+        .tutorial{
+            .instruction{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin:0 auto;
+                color:map-get($colors, font-white );
+                margin-bottom: 24px;
+                .row{
+                    @include flex-row;
+                    margin-top: 48px;
+                    align-items: center;
+                    .row__number{
+                    // margin-right: 2rem;
+                    display:none;
+                    }
+                    .row__recive-template{
+                        text-align: center;
+                        line-height: 100%;
+                        background: map-get($colors, font-white );
+                        color:map-get($colors, font-black );
+                        border-radius: 40px;
+                        box-shadow : 2px 2px 4px 2px rgba(74 100 164 /0.4);
+                        padding: 1rem 3rem;
+                        a{
+                            text-decoration: none;
+                        }
+                    }
+                    .explanation .desktop{
+                        display: none;
+                    }
+                    .explanation .mobile {
+                        display: inline;
+                    }
+                }
+            }
+        }
+        .scroll_down{
+            position:relative;
+            font-size:0.8rem;
+            text-align: center;
+        }
+        .scroll_down::after{
+            display: block;
+            text-align:center;
+            margin:0 auto;
+            padding: 0.5rem 0 ;
+            content: '';
+            width:0.5rem; 
+            height:0.5rem;
+            border-left:2px solid map-get($colors, font-balck );
+            border-bottom:2px solid map-get($colors, font-balck ) ;
+            transform: rotateZ(-45deg);
+        }
+    }
+ }
+

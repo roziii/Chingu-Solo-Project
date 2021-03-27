@@ -1,0 +1,24 @@
+
+
+@mixin flex-row(){
+    display:flex;
+    flex-flow: row nowrap;
+}
+@mixin flex-center(){
+    justify-content: center;
+    align-items: center;
+}
+@mixin circle(){
+    border-radius: 50%;
+}
+@mixin rounded__border(){
+    border-radius:4px;
+}
+@mixin center(){
+    text-align: center;
+    margin:0 auto;
+}
+@mixin flex-column(){
+    display:flex;
+    flex-flow:column nowrap;
+}

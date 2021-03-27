@@ -1,0 +1,335 @@
+@media(min-width:62rem){
+    .fullscereen{
+        position:relative;
+        width:100%;
+        height:100vh;
+        min-height: 40rem;
+        max-height: 56.25rem;
+        overflow-y: hidden;
+        .challange{
+            position:relative;
+            z-index:1;
+            float:left;
+            width:50%;
+            .bg{
+                display: block;
+                position: absolute;
+                height: 1200px;
+                width: 700px;
+                top: 50%;
+                right: -140px;
+                margin-top: -600px;
+                background:map-get($colors , font-white);
+                box-shadow: 4px 8px 16px 0 rgb(0 0 0 / 10%);
+                border-radius: 50%;
+            } 
+            .content{
+                @include flex-column;
+                @include flex-center;
+                position:absolute;
+                top:0;
+                bottom: 0;
+                right: 0;
+                left:0;
+                background :map-get($colors, font-white );
+                z-index:5;
+                
+                .pen__number{
+                    display: flex;
+                    flex-flow:row nowrap;
+                    justify-content: center;
+                    align-items:center;
+                    transform: rotateZ(-90deg) translateX(-50%);
+                    transform-origin: 0 0 ;
+                    position: absolute;
+                    top:50%;
+                    left:2px;
+                    .next_day , .previous_day
+                    {
+                        display:inline-block;
+                        margin: 0 1rem;
+                        width:20px;
+                        height:20px;
+                        background: #ddd;
+                        border-radius:50%;
+                        text-align: center;
+                        font-size: 19px;
+                        line-height:19px;
+                        font-weight: 400;
+                        cursor: pointer;
+                    }       
+                    .next_day:hover , .previous_day:hover{
+                        color:#ddd;
+                        background: #111;
+                     }
+                
+                }
+                .pen{
+                    width:400px;
+                    height:400px;
+                }
+            }
+        }
+        .tutorial{
+       
+        width:100%;
+      
+        background: linear-gradient(200deg , #406bd8 0%, #9CDBEF 100%);
+        margin-top:1rem;
+        padding: 1rem 1.5rem 1.5rem 1rem ;
+        
+
+        .logo{
+           
+            padding-top: 1.4rem;
+            position:relative;
+            @include flex-row;
+            margin: 0 auto;
+            text-align: center;
+            text-decoration: none;
+            justify-content: center;
+           .numbers{
+               position:relative;
+               z-index:1;
+               display: flex;
+               width:164px;
+               height:80px;
+               .one__one{
+                    position:absolute;
+                    width:20px;
+                    height: 32px;
+                    background:map-get($colors, font-white );
+                    transform: rotateZ(45deg);
+                    left:-12px;
+                    top:1px;
+                    border-radius: 3px;
+               }
+               .one__two{
+                   position:absolute;
+                    width:20px;
+                    height: 78px;
+                    background:map-get($colors, font-white );
+                    z-index:10;
+                    left:0;
+                    top:0;
+                    box-shadow: 2px 4px 8px rgba(74 100 164 /0.4);
+                       
+               }
+               .zero__first{
+                   position:absolute;
+                   left:10px;
+                   width:80px;
+                   height:80px;
+                   border:20px solid map-get($colors, font-white );
+                   border-radius: 50%;
+                   z-index:9;
+                   box-shadow: 2px 4px 8px rgba(74 100 164 /0.4);
+
+
+               }
+               .zero__second{
+                position:absolute;
+                left:70px;
+                width:80px;
+                height:80px;
+                border:20px solid map-get($colors, font-white );
+                border-radius: 50%;
+                z-index:8;
+                
+               }
+           }
+           .text{
+            color:map-get($colors, font-white );
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 700;
+            .big{
+                font-size:76px;
+                line-height:65px;
+            }
+            .small{
+                text-align: center;
+                font-size: 22px;
+                line-height: 20px;
+                letter-spacing: 0.02em;
+            }
+        }
+        
+        }
+        .instruction{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: map-get($colors, font-white );
+            margin: 0 auto;
+            margin-bottom: 24px;
+            .row{
+                @include flex-row;
+                margin-top: 48px;
+                align-items: center;
+                .row__number{
+                   // margin-right: 2rem;
+                   display:inline-block;
+                }
+                .row__recive-template{
+                    text-align: center;
+                    line-height: 100%;
+                    background: map-get($colors, font-white );
+                    color:map-get($colors, font-black );
+                    border-radius: 40px;
+                    box-shadow : 2px 2px 4px 2px rgba(74 100 164 /0.4);
+                    padding: 1rem 3rem;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+                .explanation .desktop{
+                    display: none;
+                }
+                .explanation .mobile {
+                    display: inline;
+                }
+            }
+        }
+    }
+    .tutorial{
+       
+        width:50%;
+        display: flex;
+        flex-flow:column nowrap;
+        height:100%;
+        float:left;
+        background: linear-gradient(200deg , #406bd8 0%, #9CDBEF 100%);
+        margin-top:0;
+        padding: 2rem 2rem 2rem 9rem ;
+        
+
+        .logo{
+           
+            padding-top: 1.4rem;
+            position:relative;
+            @include flex-row;
+            margin: 0 auto;
+            text-align: center;
+            text-decoration: none;
+            justify-content: center;
+           .numbers{
+               position:relative;
+               z-index:1;
+               display: flex;
+               width:164px;
+               height:80px;
+               .one__one{
+                    position:absolute;
+                    width:20px;
+                    height: 32px;
+                    background:map-get($colors, font-white );
+                    transform: rotateZ(45deg);
+                    left:-12px;
+                    top:1px;
+                    border-radius: 3px;
+               }
+               .one__two{
+                   position:absolute;
+                    width:20px;
+                    height: 78px;
+                    background:map-get($colors, font-white );
+                    z-index:10;
+                    left:0;
+                    top:0;
+                    box-shadow: 2px 4px 8px rgba(74 100 164 /0.4);
+                       
+               }
+               .zero__first{
+                   position:absolute;
+                   left:10px;
+                   width:80px;
+                   height:80px;
+                   border:20px solid map-get($colors, font-white );
+                   border-radius: 50%;
+                   z-index:9;
+                   box-shadow: 2px 4px 8px rgba(74 100 164 /0.4);
+
+
+               }
+               .zero__second{
+                position:absolute;
+                left:70px;
+                width:80px;
+                height:80px;
+                border:20px solid map-get($colors, font-white );
+                border-radius: 50%;
+                z-index:8;
+                
+               }
+           }
+           .text{
+            color:map-get($colors, font-white );
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 700;
+            .big{
+                font-size:76px;
+                line-height:65px;
+            }
+            .small{
+                text-align: center;
+                font-size: 22px;
+                line-height: 20px;
+                letter-spacing: 0.02em;
+            }
+        }
+        
+        }
+        .instruction{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: map-get($colors, font-white );
+            margin: 0 auto;
+            margin-bottom: 24px;
+            .row{
+                @include flex-row;
+                margin-top: 48px;
+                align-items: center;
+                .row__number{
+                   // margin-right: 2rem;
+                   display:none;
+                }
+                .row__recive-template{
+                    text-align: center;
+                    line-height: 100%;
+                    background: map-get($colors, font-white );
+                    color:map-get($colors, font-black );
+                    border-radius: 40px;
+                    box-shadow : 2px 2px 4px 2px rgba(74 100 164 /0.4);
+                    padding: 1rem 3rem;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+                .explanation .desktop{
+                    display: none;
+                }
+                .explanation .mobile {
+                    display: inline;
+                }
+            }
+        }
+    }
+    }
+    .scroll_down{
+        position:absolute;
+        bottom:10px;
+       z-index:1000;
+       left:50%;
+    }
+    #scroll_down_examples{
+        display: flex;
+        flex-flow: row nowrap;
+        padding:1rem 1rem;
+        width:80%;
+        margin :0 auto;
+        
+    }
+}

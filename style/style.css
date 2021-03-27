@@ -1,0 +1,688 @@
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #454545;
+  background: #fff;
+  font-family: "Courier New", "Courier", monospace;
+  font-size: 16px;
+}
+
+.fullscereen {
+  position: relative;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  min-width: 28rem;
+}
+.fullscereen .challange {
+  background: #f5f5f5;
+  height: 100%;
+}
+.fullscereen .challange .bg {
+  display: none;
+}
+.fullscereen .challange .content {
+  height: 100%;
+}
+.fullscereen .challange .content .pen {
+  width: 90%;
+  height: 35rem;
+  background: #1565c0;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.fullscereen .challange .content .pen .codepen {
+  width: 25rem;
+  height: 25rem;
+}
+.fullscereen .challange .content .pen__number {
+  margin: 1rem auto;
+  padding-top: 1rem;
+  text-align: center;
+}
+.fullscereen .challange .content .pen__number .next_day, .fullscereen .challange .content .pen__number .previous_day {
+  display: inline-block;
+  margin: 0 1rem;
+  width: 20px;
+  height: 20px;
+  background: #ddd;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 19px;
+  line-height: 19px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.fullscereen .challange .content .pen__number .next_day:hover, .fullscereen .challange .content .pen__number .previous_day:hover {
+  color: #ddd;
+  background: #111;
+}
+.fullscereen .tutorial {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(200deg, #406bd8 0%, #9CDBEF 100%);
+  margin-top: 1rem;
+  padding: 1rem 1.5rem 1.5rem 1rem;
+}
+.fullscereen .tutorial .text {
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(74, 100, 164, 0.4);
+}
+.fullscereen .tutorial .logo {
+  padding-top: 1.4rem;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  justify-content: center;
+}
+.fullscereen .tutorial .logo .numbers {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 164px;
+  height: 80px;
+}
+.fullscereen .tutorial .logo .numbers .one__one {
+  position: absolute;
+  width: 20px;
+  height: 32px;
+  background: #fff;
+  transform: rotateZ(45deg);
+  left: -12px;
+  top: 1px;
+  border-radius: 3px;
+}
+.fullscereen .tutorial .logo .numbers .one__two {
+  position: absolute;
+  width: 20px;
+  height: 78px;
+  background: #fff;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  box-shadow: 2px 4px 8px rgba(74, 100, 164, 0.4);
+}
+.fullscereen .tutorial .logo .numbers .zero__first {
+  position: absolute;
+  left: 10px;
+  width: 80px;
+  height: 80px;
+  border: 20px solid #fff;
+  border-radius: 50%;
+  z-index: 9;
+  box-shadow: 2px 4px 8px rgba(74, 100, 164, 0.4);
+}
+.fullscereen .tutorial .logo .numbers .zero__second {
+  position: absolute;
+  left: 70px;
+  width: 80px;
+  height: 80px;
+  border: 20px solid #fff;
+  border-radius: 50%;
+  z-index: 8;
+}
+.fullscereen .tutorial .logo .text {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+.fullscereen .tutorial .logo .text .big {
+  font-size: 76px;
+  line-height: 65px;
+}
+.fullscereen .tutorial .logo .text .small {
+  text-align: center;
+  font-size: 22px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+.fullscereen .tutorial .instruction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+.fullscereen .tutorial .instruction .row {
+  margin-top: 48px;
+  font-weight: 700;
+}
+.fullscereen .tutorial .instruction .row .row__number {
+  display: none;
+}
+.fullscereen .tutorial .instruction .row .button {
+  width: 15rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 100%;
+  background: #fff;
+  color: #000;
+  border-radius: 40px;
+  box-shadow: 2px 2px 4px 2px rgba(74, 100, 164, 0.4);
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+.fullscereen .tutorial .instruction .row .button a {
+  text-decoration: none;
+}
+.fullscereen .tutorial .instruction .row .button a:active {
+  color: #000;
+}
+.fullscereen .tutorial .instruction .row .row__input--url {
+  font: inherit;
+  background: none;
+  color: inherit;
+  color: #fff;
+  border: 4px solid #fff;
+  border-radius: 40px;
+  outline: none;
+  width: 15rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 100%;
+}
+.fullscereen .tutorial .instruction .row .row__inpu--url::placeholder {
+  color: #fff;
+}
+.fullscereen .tutorial .instruction .row .explanation .desktop {
+  display: none;
+}
+.fullscereen .tutorial .instruction .row .explanation .mobile {
+  display: inline;
+}
+.fullscereen .tutorial .instruction .row .row__paste-job {
+  background: none;
+  color: #fff;
+  border: 4px solid #fff;
+}
+.fullscereen .tutorial .timer_block {
+  text-align: center;
+  margin-top: 3rem;
+}
+.fullscereen .tutorial .timer_block .timer_img {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+.fullscereen .tutorial .timer_block .timer {
+  text-align: center;
+  display: inline-block;
+}
+.fullscereen .scroll_down {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  margin: 1.5rem auto;
+  font: inherit;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.fullscereen .scroll_down::after {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotateZ(-45deg);
+}
+
+#scroll_down_examples {
+  display: block;
+  text-decoration: none;
+  font: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  color: #2e2e38;
+  overflow: hidden;
+}
+#scroll_down_examples .pen_example {
+  width: 400px;
+  height: 400px;
+  margin: 1rem auto;
+}
+
+/* scroll_down_examples{
+    z-index:10000;
+    display: block;
+    padding:1rem 1rem;
+    background: #eee;
+    width:100%;
+    }
+     */
+.footer {
+  width: 100%;
+  border-top: 1px solid #aaa;
+  background: #eee;
+  text-align: center;
+  padding: 2rem;
+}
+.footer .footer__heart-img {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.footer .author {
+  font-weight: 700;
+  margin: 1rem;
+}
+.footer .author p {
+  font-size: 1.5rem;
+}
+.footer .author span {
+  display: block;
+  font-size: 2rem;
+}
+.footer .info, .footer .used-icon-info {
+  margin: 2rem;
+  font-weight: 700;
+}
+.footer .info a, .footer .used-icon-info a {
+  font-size: 1.5rem;
+  margin: 10px;
+  display: block;
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+
+@media (min-width: 28rem) and (max-width: 62rem) {
+  .fullscereen {
+    position: relative;
+    width: 100%;
+    min-width: none;
+  }
+  .fullscereen .challange .bg {
+    display: none;
+  }
+  .fullscereen .challange .content .pen {
+    max-width: 400px;
+    max-height: 400px;
+  }
+  .fullscereen .tutorial .instruction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    color: #fff;
+    margin-bottom: 24px;
+  }
+  .fullscereen .tutorial .instruction .row {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 48px;
+    align-items: center;
+  }
+  .fullscereen .tutorial .instruction .row .row__number {
+    display: none;
+  }
+  .fullscereen .tutorial .instruction .row .row__recive-template {
+    text-align: center;
+    line-height: 100%;
+    background: #fff;
+    color: #000;
+    border-radius: 40px;
+    box-shadow: 2px 2px 4px 2px rgba(74, 100, 164, 0.4);
+    padding: 1rem 3rem;
+  }
+  .fullscereen .tutorial .instruction .row .row__recive-template a {
+    text-decoration: none;
+  }
+  .fullscereen .tutorial .instruction .row .explanation .desktop {
+    display: none;
+  }
+  .fullscereen .tutorial .instruction .row .explanation .mobile {
+    display: inline;
+  }
+  .fullscereen .scroll_down {
+    position: relative;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .fullscereen .scroll_down::after {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotateZ(-45deg);
+  }
+}
+@media (min-width: 62rem) {
+  .fullscereen {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 40rem;
+    max-height: 56.25rem;
+    overflow-y: hidden;
+  }
+  .fullscereen .challange {
+    position: relative;
+    z-index: 1;
+    float: left;
+    width: 50%;
+  }
+  .fullscereen .challange .bg {
+    display: block;
+    position: absolute;
+    height: 1200px;
+    width: 700px;
+    top: 50%;
+    right: -140px;
+    margin-top: -600px;
+    background: #fff;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  }
+  .fullscereen .challange .content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #fff;
+    z-index: 5;
+  }
+  .fullscereen .challange .content .pen__number {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    transform: rotateZ(-90deg) translateX(-50%);
+    transform-origin: 0 0;
+    position: absolute;
+    top: 50%;
+    left: 2px;
+  }
+  .fullscereen .challange .content .pen__number .next_day, .fullscereen .challange .content .pen__number .previous_day {
+    display: inline-block;
+    margin: 0 1rem;
+    width: 20px;
+    height: 20px;
+    background: #ddd;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 19px;
+    line-height: 19px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  .fullscereen .challange .content .pen__number .next_day:hover, .fullscereen .challange .content .pen__number .previous_day:hover {
+    color: #ddd;
+    background: #111;
+  }
+  .fullscereen .challange .content .pen {
+    width: 400px;
+    height: 400px;
+  }
+  .fullscereen .tutorial {
+    width: 100%;
+    background: linear-gradient(200deg, #406bd8 0%, #9CDBEF 100%);
+    margin-top: 1rem;
+    padding: 1rem 1.5rem 1.5rem 1rem;
+  }
+  .fullscereen .tutorial .logo {
+    padding-top: 1.4rem;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+  }
+  .fullscereen .tutorial .logo .numbers {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 164px;
+    height: 80px;
+  }
+  .fullscereen .tutorial .logo .numbers .one__one {
+    position: absolute;
+    width: 20px;
+    height: 32px;
+    background: #fff;
+    transform: rotateZ(45deg);
+    left: -12px;
+    top: 1px;
+    border-radius: 3px;
+  }
+  .fullscereen .tutorial .logo .numbers .one__two {
+    position: absolute;
+    width: 20px;
+    height: 78px;
+    background: #fff;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    box-shadow: 2px 4px 8px rgba(74, 100, 164, 0.4);
+  }
+  .fullscereen .tutorial .logo .numbers .zero__first {
+    position: absolute;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    border: 20px solid #fff;
+    border-radius: 50%;
+    z-index: 9;
+    box-shadow: 2px 4px 8px rgba(74, 100, 164, 0.4);
+  }
+  .fullscereen .tutorial .logo .numbers .zero__second {
+    position: absolute;
+    left: 70px;
+    width: 80px;
+    height: 80px;
+    border: 20px solid #fff;
+    border-radius: 50%;
+    z-index: 8;
+  }
+  .fullscereen .tutorial .logo .text {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+  }
+  .fullscereen .tutorial .logo .text .big {
+    font-size: 76px;
+    line-height: 65px;
+  }
+  .fullscereen .tutorial .logo .text .small {
+    text-align: center;
+    font-size: 22px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+  }
+  .fullscereen .tutorial .instruction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  .fullscereen .tutorial .instruction .row {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 48px;
+    align-items: center;
+  }
+  .fullscereen .tutorial .instruction .row .row__number {
+    display: inline-block;
+  }
+  .fullscereen .tutorial .instruction .row .row__recive-template {
+    text-align: center;
+    line-height: 100%;
+    background: #fff;
+    color: #000;
+    border-radius: 40px;
+    box-shadow: 2px 2px 4px 2px rgba(74, 100, 164, 0.4);
+    padding: 1rem 3rem;
+  }
+  .fullscereen .tutorial .instruction .row .row__recive-template a {
+    text-decoration: none;
+  }
+  .fullscereen .tutorial .instruction .row .explanation .desktop {
+    display: none;
+  }
+  .fullscereen .tutorial .instruction .row .explanation .mobile {
+    display: inline;
+  }
+  .fullscereen .tutorial {
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    float: left;
+    background: linear-gradient(200deg, #406bd8 0%, #9CDBEF 100%);
+    margin-top: 0;
+    padding: 2rem 2rem 2rem 9rem;
+  }
+  .fullscereen .tutorial .logo {
+    padding-top: 1.4rem;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+  }
+  .fullscereen .tutorial .logo .numbers {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 164px;
+    height: 80px;
+  }
+  .fullscereen .tutorial .logo .numbers .one__one {
+    position: absolute;
+    width: 20px;
+    height: 32px;
+    background: #fff;
+    transform: rotateZ(45deg);
+    left: -12px;
+    top: 1px;
+    border-radius: 3px;
+  }
+  .fullscereen .tutorial .logo .numbers .one__two {
+    position: absolute;
+    width: 20px;
+    height: 78px;
+    background: #fff;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    box-shadow: 2px 4px 8px rgba(74, 100, 164, 0.4);
+  }
+  .fullscereen .tutorial .logo .numbers .zero__first {
+    position: absolute;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    border: 20px solid #fff;
+    border-radius: 50%;
+    z-index: 9;
+    box-shadow: 2px 4px 8px rgba(74, 100, 164, 0.4);
+  }
+  .fullscereen .tutorial .logo .numbers .zero__second {
+    position: absolute;
+    left: 70px;
+    width: 80px;
+    height: 80px;
+    border: 20px solid #fff;
+    border-radius: 50%;
+    z-index: 8;
+  }
+  .fullscereen .tutorial .logo .text {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+  }
+  .fullscereen .tutorial .logo .text .big {
+    font-size: 76px;
+    line-height: 65px;
+  }
+  .fullscereen .tutorial .logo .text .small {
+    text-align: center;
+    font-size: 22px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+  }
+  .fullscereen .tutorial .instruction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  .fullscereen .tutorial .instruction .row {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 48px;
+    align-items: center;
+  }
+  .fullscereen .tutorial .instruction .row .row__number {
+    display: none;
+  }
+  .fullscereen .tutorial .instruction .row .row__recive-template {
+    text-align: center;
+    line-height: 100%;
+    background: #fff;
+    color: #000;
+    border-radius: 40px;
+    box-shadow: 2px 2px 4px 2px rgba(74, 100, 164, 0.4);
+    padding: 1rem 3rem;
+  }
+  .fullscereen .tutorial .instruction .row .row__recive-template a {
+    text-decoration: none;
+  }
+  .fullscereen .tutorial .instruction .row .explanation .desktop {
+    display: none;
+  }
+  .fullscereen .tutorial .instruction .row .explanation .mobile {
+    display: inline;
+  }
+
+  .scroll_down {
+    position: absolute;
+    bottom: 10px;
+    z-index: 1000;
+    left: 50%;
+  }
+
+  #scroll_down_examples {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 1rem 1rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
